@@ -17,22 +17,24 @@ npm install @owstack/message-lib
 To sign a message:
 
 ```javascript
-var btcLib = require('@owstack/message-lib');
+var Message = require('@owstack/message-lib');
+var btcLib = require('@owstack/btc-lib');
 var config = {coinLib: btcLib};
 
 var privateKey = PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
-var signature = Message(config, 'hello, world').sign(privateKey);
+var signature = new Message(config, 'hello, world').sign(privateKey);
 ```
 
 To verify a message:
 
 ```javascript
-var btcLib = require('@owstack/message-lib');
+var Message = require('@owstack/message-lib');
+var btcLib = require('@owstack/btc-lib');
 var config = {coinLib: btcLib};
 
 var address = 'n1ZCYg9YXtB5XCZazLxSmPDa8iwJRZHhGx';
 var signature = 'H/DIn8uA1scAuKLlCx+/9LnAcJtwQQ0PmcPrJUq90aboLv3fH5fFvY+vmbfOSFEtGarznYli6ShPr9RXwY9UrIY=';
-var verified = Message(config, 'hello, world').verify(address, signature);
+var verified = new Message(config, 'hello, world').verify(address, signature);
 ```
 
 ## License
