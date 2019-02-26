@@ -17,24 +17,26 @@ npm install @owstack/message-lib
 To sign a message:
 
 ```javascript
-var Message = require('@owstack/message-lib');
-var btcLib = require('@owstack/btc-lib');
-var config = {coinLib: btcLib};
+const {PrivateKey} = require('@owstack/key-lib');
+const Message = require('@owstack/message-lib');
+const btcLib = require('@owstack/btc-lib');
+const config = {coinLib: btcLib};
 
-var privateKey = PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
-var signature = new Message(config, 'hello, world').sign(privateKey);
+const privateKey = PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
+const signature = new Message(config, 'hello, world').sign(privateKey);
 ```
 
 To verify a message:
 
 ```javascript
-var Message = require('@owstack/message-lib');
-var btcLib = require('@owstack/btc-lib');
-var config = {coinLib: btcLib};
+const {PrivateKey} = require('@owstack/key-lib');
+const Message = require('@owstack/message-lib');
+const btcLib = require('@owstack/btc-lib');
+const config = {coinLib: btcLib};
 
-var address = 'n1ZCYg9YXtB5XCZazLxSmPDa8iwJRZHhGx';
-var signature = 'H/DIn8uA1scAuKLlCx+/9LnAcJtwQQ0PmcPrJUq90aboLv3fH5fFvY+vmbfOSFEtGarznYli6ShPr9RXwY9UrIY=';
-var verified = new Message(config, 'hello, world').verify(address, signature);
+const address = 'n1ZCYg9YXtB5XCZazLxSmPDa8iwJRZHhGx';
+const signature = 'H/DIn8uA1scAuKLlCx+/9LnAcJtwQQ0PmcPrJUq90aboLv3fH5fFvY+vmbfOSFEtGarznYli6ShPr9RXwY9UrIY=';
+const verified = new Message(config, 'hello, world').verify(address, signature);
 ```
 
 ## License
