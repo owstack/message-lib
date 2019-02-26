@@ -1,7 +1,8 @@
 MessageLib
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/@owstack/message-lib.svg?style=flat-square)](https://www.npmjs.org/package/@owstack/message-lib)[![Build Status](https://img.shields.io/travis/owstack/message-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/owstack/message-lib)
+[![NPM Package](https://img.shields.io/npm/v/@owstack/message-lib.svg?style=flat-square)](https://www.npmjs.org/package/@owstack/message-lib)
+[![Build Status](https://img.shields.io/travis/com/owstack/message-lib.svg?branch=master&style=flat-square)](https://travis-ci.com/owstack/message-lib)
 [![Coverage Status](https://img.shields.io/coveralls/owstack/message-lib.svg?style=flat-square)](https://coveralls.io/r/owstack/message-lib)
 
 Adds support for verifying and signing messages in [Node.js](http://nodejs.org/) and web browsers.
