@@ -29,7 +29,6 @@ const signature = new Message(config, 'hello, world').sign(privateKey);
 To verify a message:
 
 ```javascript
-const {PrivateKey} = require('@owstack/key-lib');
 const Message = require('@owstack/message-lib');
 const btcLib = require('@owstack/btc-lib');
 const config = {coinLib: btcLib};
