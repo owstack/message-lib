@@ -1,0 +1,11 @@
+*.sw[a-z]
+coverage
+node_modules
+
+npm-debug.log
+message-lib.js
+message-lib.min.js
+tests.js
+
+report
+.DS_Store
