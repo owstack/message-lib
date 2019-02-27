@@ -1,8 +1,3 @@
-'use strict';
+const Message = require('./lib/message');
 
-var messageLib = {};
-
-messageLib.version = 'v' + require('./package.json').version;
-messageLib.message = require('./lib/message');
-
-module.exports = messageLib;
+module.exports = Message;

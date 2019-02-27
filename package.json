@@ -1,6 +1,6 @@
 {
   "name": "@owstack/message-lib",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Message verification and signing.",
   "main": "index.js",
   "scripts": {
