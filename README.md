@@ -19,23 +19,19 @@ To sign a message:
 ```javascript
 const {PrivateKey} = require('@owstack/key-lib');
 const Message = require('@owstack/message-lib');
-const btcLib = require('@owstack/btc-lib');
-const config = {coinLib: btcLib};
 
 const privateKey = PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
-const signature = new Message(config, 'hello, world').sign(privateKey);
+const signature = new Message('hello, world', 'btc').sign(privateKey);
 ```
 
 To verify a message:
 
 ```javascript
 const Message = require('@owstack/message-lib');
-const btcLib = require('@owstack/btc-lib');
-const config = {coinLib: btcLib};
 
 const address = 'n1ZCYg9YXtB5XCZazLxSmPDa8iwJRZHhGx';
 const signature = 'H/DIn8uA1scAuKLlCx+/9LnAcJtwQQ0PmcPrJUq90aboLv3fH5fFvY+vmbfOSFEtGarznYli6ShPr9RXwY9UrIY=';
-const verified = new Message(config, 'hello, world').verify(address, signature);
+const verified = new Message('hello, world', 'btc').verify(address, signature);
 ```
 
 ## License
