@@ -8,7 +8,7 @@ var bchLib = require('@owstack/bch-lib');
 var btcLib = require('@owstack/btc-lib');
 var ltcLib = require('@owstack/ltc-lib');
 var keyLib = require('@owstack/key-lib');
-var Message = require('../').message;
+var Message = require('..');
 var Signature = keyLib.crypto.Signature;
 
 describe('Message', function() {
