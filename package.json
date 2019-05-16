@@ -1,6 +1,6 @@
 {
   "name": "@owstack/message-lib",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Message verification and signing.",
   "main": "index.js",
   "scripts": {
@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "@owstack/ows-common": "^0.0.17",
-    "@owstack/key-lib": "^0.0.39"
+    "@owstack/key-lib": "^0.0.41"
   },
   "devDependencies": {
     "@owstack/ows-build": "^0.0.12",
-    "@owstack/bch-lib": "^0.4.5",
-    "@owstack/btc-lib": "^0.1.26",
-    "@owstack/ltc-lib": "^0.1.25",
+    "@owstack/bch-lib": "^0.4.6",
+    "@owstack/btc-lib": "^0.1.27",
+    "@owstack/ltc-lib": "^0.1.26",
     "brfs": "^1.3.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10"
